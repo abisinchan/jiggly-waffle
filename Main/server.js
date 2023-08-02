@@ -1,8 +1,10 @@
+//configure
 const express = require('express');
 // Import and require mysql2
 const mysql = require('mysql2');
-
+//port
 const PORT = process.env.PORT || 3001;
+//express app
 const app = express();
 
 // Express middleware
@@ -16,7 +18,7 @@ const db = mysql.createConnection(
     // MySQL username,
     user: 'root',
     // TODO: Add MySQL password here
-    password: '',
+    password: 'moon',
     database: 'movies_db'
   },
   console.log(`Connected to the movies_db database.`)
